@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#E3002C</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--color personalizado-->
+    <color name="Transparent">#00FFFFFF</color>
+    <color name="Red_200">#E3002C</color>
+    <color name="Red_150">#E61345</color>
+    <color name="Red_100">#EB4469</color>
+    <color name="purple_1">#8000EA</color>
+    <color name="purple_2">#AF16A7</color>
+    <color name="angWhite">#F3F6F9</color>
+    <color name="angBlack">#10151B</color>
+    <color name="angGreen">#22D829</color>
+    <color name="angBlue">#0791CF</color>
+    <color name="angOrange">#FF9800</color>
+    <color name="angTransparent">#00FFFFFF</color>
+    <color name="angGris">#25282C</color>
+
+    <color name="textColorHighlight">#2196F3</color>
+    <color name="purple">#9C27B0</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#7F8285</color>
+
+
+    <!--color dialog-->
+    <color name="angVerde">#7CFF81</color>
+    <color name="angVerdeOscuro">#0F9514</color>
+    <color name="angVerdeOscuro2">#015905</color>
+    <color name="angNegroSuave">#191919</color>
+    <color name="angRojoSuave">#8A9F0909</color>
+    <color name="angSuccess">#2DCD34</color>
+    <color name="angError">#FA0334</color>
+    <color name="angWarning">#FF9800</color>
+
+</resources>

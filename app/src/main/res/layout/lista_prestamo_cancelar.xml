@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvCancelarPrestamo"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardElevation="1dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkSeleccionar"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivFotoCliente"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_prestamo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTipoPrestamo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="INTERES CAPITAL"
+                        android:textColor="@color/black"
+                        android:textSize="6pt"/>
+
+                    <TextView
+                        android:id="@+id/tvFechaPrestamo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="de julio de 2020"
+                        android:textColor="@color/black"
+                        android:textSize="5pt"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvImporteCredito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:textColor="@color/angGreen"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="S/. 22222"
+                android:textSize="14sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

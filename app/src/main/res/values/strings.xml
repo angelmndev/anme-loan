@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">MIAN</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <!--nav botton-->
+    <string name="navInicio">Inicio</string>
+    <string name="navCliente">Clientes</string>
+    <string name="navPrestamo">Prestamos</string>
+    <string name="navCobro">Cobros</string>
+    <string name="navRegistro">Registro</string>
+
+    <!--cliente-->
+    <string name="clieListaMain">Registro de cliente</string>
+    <string name="clieNuevoCliente">Agregar cliente</string>
+    <string name="clieTitulo">Clientes</string>
+    <string name="clieEstadoAll">Todos</string>
+    <string name="clieEstadoActivo">Activo</string>
+    <string name="clieEstadoInactivo">Inactivo</string>
+    <string name="clieBuscar">Buscar cliente</string>
+
+    <!--nuevo cliente-->
+    <string name="clieNewTitulo">Nuevo cliente</string>
+    <string name="clieNewCodigo">Codigo</string>
+    <string name="clieNewNombre">Nombre</string>
+    <string name="clieNewApellido">Apellido</string>
+    <string name="clieNewDni">Dni</string>
+    <string name="clieNewTelefono">Telefono</string>
+    <string name="clieNewDireccion">Direccion</string>
+    <string name="clieNewGuardar">Guardar</string>
+    <string name="clieNewRegresar">Regresar</string>
+
+
+    <!--nuevo prestamoGroup-->
+    <string name="presNewTitulo">Nuevo prestamoGroup</string>
+    <string name="presNewDniCliente">Dni</string>
+    <string name="presNewNombreCliente">Nombres cliente</string>
+    <string name="presNewImporteCredito">Importe credito</string>
+    <string name="presNewModalida">Modalida</string>
+    <string name="presNewTasaInteres">Tasa de interes</string>
+    <string name="presNewNumeroCuotas">Numero de cuotas</string>
+    <string name="presNewImporteCuota">Importe cuota</string>
+    <string name="presNewTotalPagar">Total a pagar</string>
+    <string name="presNewGuardar">Guardar</string>
+    <string name="presNewRegresar">Cancelar</string>
+    <string name="presNewFecha">Fecha</string>
+
+    <!--Usuario-->
+    <string name="usuMainTitulo">Usuario</string>
+
+    <!--Usuario Nuevo-->
+    <string name="usuNewTitulo">Nuevo usuario</string>
+    <string name="usuNewCodigo">Codigo</string>
+    <string name="usuNewFoto">Foto</string>
+    <string name="usuNewNombre">Nombre</string>
+    <string name="usuNewApellido">Apellido</string>
+    <string name="usuNewUsuario">Usuario</string>
+    <string name="usuNewPassword">Password</string>
+    <string name="usuNewDni">Dni</string>
+    <string name="usuNewTelefono">Telefono</string>
+    <string name="usuNewDireccion">Direccion</string>
+    <string name="usuNewPrivilegio">Privilegio</string>
+    <string name="usuNewEstado">Estado</string>
+
+    <!---Prestamo main-->
+    <string name="presMainTitulo">Prestamos</string>
+    <string name="presMainNuevoPrestamo">Nuevo prestamo</string>
+    <string name="presMainModificarPrestamo">Modificar prestamo</string>
+    <string name="presMainCancelarPrestamo">Cancelar prestamo</string>
+    <string name="presMainRegistroPrestamo">Registro prestamo</string>
+    <string name="presMainStadistica">Stadistica</string>
+    <string name="presMainCopiaSeguridad">Copia de seguridad</string>
+    <string name="presMainUsuario">Usuario</string>
+
+    <!--login-->
+    <string name="loginUsuario">Usuario</string>
+    <string name="loginPassword">Password</string>
+    <string name="loginIngresar">Ingresar</string>
+
+
+    <!--dialogo-->
+    <string name="dialogSuccesAceptar">Aceptar</string>
+
+
+    <!--prestamos registro-->
+    <string name="presReTitulo">Registro de prestamos</string>
+
+    <string-array name="listModalidad">
+        <item>Modalidad de pago</item>
+        <item>Semanal</item>
+        <item>Quincenal</item>
+        <item>Mensual</item>
+        <item>Anual</item>
+    </string-array>
+
+
+    <string-array name="listTipoDePago">
+        <item>Tipo de pago</item>
+        <item>Interes capital</item>
+        <item>Solo interes</item>
+    </string-array>
+
+
+    <string-array name="listSexo">
+        <item>Selecciona genero</item>
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+    <string-array name="listPrivilegioUsuario">
+        <item>Privilegio</item>
+        <item>Administrador</item>
+        <item>Usuario</item>
+    </string-array>
+
+    <string-array name="listNumeroCuota">
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

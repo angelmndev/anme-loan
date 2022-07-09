@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/angWhite"
+    android:layout_height="match_parent"
+    tools:context=".ui.usuario.UsuarioFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.cliente.ClienteFragment">
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:background="@drawable/ic_bg_main_prestamo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btNuevoUsuario"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/Transparent"
+            android:src="@drawable/ic_new_user"
+            app:layout_constraintEnd_toStartOf="@+id/btBuscarCliente"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:text="@string/usuMainTitulo"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btBuscarCliente"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:background="@color/Transparent"
+            android:src="@drawable/ic_buscar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/ic_layout_bg"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/btEstadoAll"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ic_button_radius"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="@string/clieEstadoAll"
+                android:textColor="@color/purple_500"
+                android:textSize="13dp"
+                app:backgroundTint="@color/white" />
+
+            <Button
+                android:id="@+id/btEstadoActivo"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ic_button_radius"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="@string/clieEstadoActivo"
+                android:textSize="13dp"
+                app:backgroundTint="@color/Transparent" />
+
+            <Button
+                android:id="@+id/btEstadoInactivo"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:layout_weight="1"
+                android:background="@drawable/ic_button_radius"
+                android:text="@string/clieEstadoInactivo"
+                android:textSize="13dp"
+                app:backgroundTint="@color/Transparent" />
+
+        </LinearLayout>
+
+
+
+
+
+        <EditText
+            android:id="@+id/txtBuscar"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/ic_border_radius_txt"
+            android:ems="10"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:hint="@string/clieBuscar"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toStartOf="@+id/btBuscarCliente"
+            app:layout_constraintHorizontal_bias="0.865"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="148dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:padding="20dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view2">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvUsuarioMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

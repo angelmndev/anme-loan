@@ -1,0 +1,5 @@
+F:\DDD miansoft\miansoft\Soporte\bin\Release\Soporte.dll
+F:\DDD miansoft\miansoft\Soporte\bin\Release\Soporte.pdb
+F:\DDD miansoft\miansoft\Soporte\obj\Release\Soporte.csproj.CoreCompileInputs.cache
+F:\DDD miansoft\miansoft\Soporte\obj\Release\Soporte.dll
+F:\DDD miansoft\miansoft\Soporte\obj\Release\Soporte.pdb

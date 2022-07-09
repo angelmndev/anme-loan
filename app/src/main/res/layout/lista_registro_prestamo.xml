@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvListaClientePrestamo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardElevation="1dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivFotoCliente"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/bg_cliente_nuevo" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/ivFotoCliente"
+                android:layout_toRightOf="@+id/ivFotoCliente"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:text="Miguel"
+                    android:textColor="@color/angBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvFechaPrestamo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:text="12 de mayo de 3021"
+                    android:textColor="@color/angBlue"
+                    android:textSize="6pt"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvImporteCredito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:textColor="@color/angGreen"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="22222"
+                android:textSize="14sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

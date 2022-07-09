@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cobro.CobrarDetalleFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:background="@drawable/ic_bg_main_prestamo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivFotoCliente"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_hombre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvClieDni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="70354395"
+                android:textColor="@color/angWhite"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivFotoCliente" />
+
+            <TextView
+                android:id="@+id/tvNombreCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_condensed_regular"
+                android:text="MIGUEL ANGEL MEZA"
+                android:textColor="@color/angWhite"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivFotoCliente" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="160dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:orientation="vertical"
+                        android:padding="0dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:text="Informacion del prestamo"
+                            android:textColor="@color/black"
+                            android:textSize="7pt" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="20dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="Importe Credito"
+                                        android:textColor="@color/black"
+                                        android:textSize="7pt" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="Modalidad de pago"
+                                        android:textColor="@color/black"
+                                        android:textSize="7pt" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvImporteCredito"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="S/. 2000"
+                                        android:textColor="@color/angGris" />
+
+                                    <TextView
+                                        android:id="@+id/tvModalidadPago"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="Mensual"
+                                        android:textColor="@color/angGris" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="Tipo de pago"
+                                        android:textColor="@color/black"
+                                        android:textSize="7pt" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="Numero de cuota"
+                                        android:textColor="@color/black"
+                                        android:textSize="7pt" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvTipoPago"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="Capital interes"
+                                        android:textColor="@color/angGris" />
+
+                                    <TextView
+                                        android:id="@+id/tvNumeroCuota"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="10 semanas"
+                                        android:textColor="@color/angGris" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="Tasa de interes"
+                                        android:textColor="@color/black"
+                                        android:textSize="7pt" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="Importe cuota"
+                                        android:textColor="@color/black"
+                                        android:textSize="7pt" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvTasaInteres"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="10 %"
+                                        android:textColor="@color/angGris" />
+
+                                    <TextView
+                                        android:id="@+id/tvImporteCuota"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="S/. 120"
+                                        android:textColor="@color/angGris" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="Total a pagar"
+                                        android:textColor="@color/black"
+                                        android:textSize="7pt" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="Fecha de prestamoGroup"
+                                        android:textColor="@color/black"
+                                        android:textSize="7pt" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvTotalPagar"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="S/. 2200"
+                                        android:textColor="@color/angGris" />
+
+                                    <TextView
+                                        android:id="@+id/tvFechaPrestamo"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:gravity="center_horizontal"
+                                        android:text="02 de diciembre de 2020"
+                                        android:textColor="@color/angGris" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:fontFamily="@font/roboto_condensed_bold"
+                                    android:text="Realizar cobro"
+                                    android:textColor="@color/black"
+                                    android:textSize="7pt" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="horizontal">
+
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="5dp"
+                                        android:hint="Monto a cobrar"
+                                        android:textColorHint="@color/angGris"
+                                        android:theme="@style/EditTextThemeOverlay"
+                                        app:boxStrokeColor="@color/angGris"
+                                        app:errorTextAppearance="@style/ErrorTextAppearance"
+                                        app:helperTextTextAppearance="@style/HelperTextAppearance"
+                                        app:layout_constraintLeft_toLeftOf="parent"
+                                        app:layout_constraintRight_toRightOf="parent">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/etMontoCobrar"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_condensed_bold"
+                                            android:inputType="numberDecimal"
+                                            android:maxLength="5"
+                                            android:textColorHighlight="@color/black" />
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                                    <com.google.android.material.textfield.TextInputLayout
+                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:hint="Cuotas"
+                                        android:layout_marginLeft="5dp"
+                                        android:textColorHint="@color/angGris"
+                                        android:theme="@style/EditTextThemeOverlay"
+                                        app:boxStrokeColor="@color/angGris"
+                                        app:layout_constraintLeft_toLeftOf="parent"
+                                        app:layout_constraintRight_toRightOf="parent">
+
+                                        <AutoCompleteTextView
+                                            android:id="@+id/acNumeroCuota"
+                                            android:layout_width="match_parent"
+                                            android:fontFamily="@font/roboto_condensed_bold"
+                                            android:textSize="7pt"
+                                            android:layout_height="wrap_content"
+                                            android:inputType="none" />
+
+                                    </com.google.android.material.textfield.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="150dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:hint="Monto recibido"
+                                    android:textColorHint="@color/angGris"
+                                    android:theme="@style/EditTextThemeOverlay"
+                                    app:boxStrokeColor="@color/angGris"
+                                    app:counterEnabled="true"
+                                    app:counterMaxLength="5"
+                                    app:errorTextAppearance="@style/ErrorTextAppearance"
+                                    app:helperTextTextAppearance="@style/HelperTextAppearance"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/etMontoRecibido"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:inputType="numberDecimal"
+                                        android:maxLength="5"
+                                        android:textColorHighlight="@color/black" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:fontFamily="@font/roboto_condensed_bold"
+                                    android:text="Falta pagar: S/. 30.00"
+                                    android:textColor="@color/black"
+                                    android:textSize="7pt" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginRight="16dp"
+                                    android:layout_marginBottom="30dp"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/btRegresar"
+                                        android:layout_width="0dp"
+                                        android:layout_height="60dp"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:text="Regresar" />
+
+
+                                    <Button
+                                        android:id="@+id/btCobrar"
+                                        android:layout_width="0dp"
+                                        android:layout_height="60dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/roboto_condensed_bold"
+                                        android:text="Cobrar" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_inicio"
+        android:icon="@drawable/ic_hogar"
+        android:title="@string/navInicio" />
+
+    <item
+        android:id="@+id/navigation_cliente"
+        android:icon="@drawable/ic_cliente_oficial"
+        android:title="@string/navCliente" />
+
+    <item
+        android:id="@+id/navigation_prestamo"
+        android:icon="@drawable/ic_money_salida"
+        android:title="@string/navPrestamo" />
+
+    <item
+        android:id="@+id/navigation_cobros"
+        android:icon="@drawable/ic_money_entrada"
+        android:title="@string/navCobro" />
+
+    <item
+        android:id="@+id/navigation_registro"
+        android:icon="@drawable/ic_constancia"
+        android:title="@string/navRegistro" />
+
+</menu>

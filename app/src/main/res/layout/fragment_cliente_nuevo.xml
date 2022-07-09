@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cliente.ClienteNuevoFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/mProgressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:elevation="100dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:background="@drawable/ic_bg_prestamo_nuevo_off"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="@string/clieNewTitulo"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.099"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        app:layout_constraintGuide_begin="207dp"
+                        app:layout_constraintGuide_percent="0.5" />
+
+
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/clieNewNombre"
+                            android:textColorHint="@color/angGris"
+                            android:theme="@style/EditTextThemeOverlay"
+                            app:boxStrokeColor="@color/angGris"
+                            app:errorEnabled="true"
+                            app:errorTextAppearance="@style/ErrorTextAppearance"
+                            app:helperTextTextAppearance="@style/HelperTextAppearance"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtClieNombre"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_condensed_bold"
+                                android:inputType="textPersonName"
+                                android:textColorHighlight="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/clieNewApellido"
+                            android:textColorHint="@color/angGris"
+                            android:theme="@style/EditTextThemeOverlay"
+                            app:boxStrokeColor="@color/angGris"
+                            app:errorEnabled="true"
+                            app:errorTextAppearance="@style/ErrorTextAppearance"
+                            app:helperTextTextAppearance="@style/HelperTextAppearance"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtClieApellido"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_condensed_bold"
+                                android:inputType="textPersonName"
+                                android:textColorHighlight="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Spinner
+                            android:id="@+id/cbSexo"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="18dp"
+                            android:background="@drawable/ic_border_radius_txt"
+                            android:entries="@array/listSexo"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/SpinnerTheme" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/clieNewDni"
+                            android:textColorHint="@color/angGris"
+                            android:theme="@style/EditTextThemeOverlay"
+                            app:boxStrokeColor="@color/angGris"
+                            app:errorEnabled="true"
+                            app:errorTextAppearance="@style/ErrorTextAppearance"
+                            app:helperTextTextAppearance="@style/HelperTextAppearance"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtClieDni"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_condensed_bold"
+                                android:inputType="number"
+                                android:textColorHighlight="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/clieNewTelefono"
+                            android:textColorHint="@color/angGris"
+                            android:theme="@style/EditTextThemeOverlay"
+                            app:boxStrokeColor="@color/angGris"
+                            app:errorEnabled="true"
+                            app:errorTextAppearance="@style/ErrorTextAppearance"
+                            app:helperTextTextAppearance="@style/HelperTextAppearance"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtClieTelefono"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_condensed_bold"
+                                android:inputType="number"
+                                android:textColorHighlight="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/clieNewDireccion"
+                            android:textColorHint="@color/angGris"
+                            android:theme="@style/EditTextThemeOverlay"
+                            app:boxStrokeColor="@color/angGris"
+                            app:errorEnabled="true"
+                            app:errorTextAppearance="@style/ErrorTextAppearance"
+                            app:helperTextTextAppearance="@style/HelperTextAppearance"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtClieDireccion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_condensed_bold"
+                                android:inputType="text"
+                                android:textColorHighlight="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btRegresarCliente"
+                                android:layout_width="0dp"
+                                android:layout_height="60dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_condensed_bold"
+                                android:text="@string/presNewRegresar" />
+
+
+                            <Button
+                                android:id="@+id/btGuardarCliente"
+                                android:layout_width="0dp"
+                                android:layout_height="60dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_condensed_bold"
+                                android:text="@string/presNewGuardar" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

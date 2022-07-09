@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_inicio">
+
+    <fragment
+        android:id="@+id/navigation_inicio"
+        android:name="com.example.mian.ui.inicio.InicioFragment"
+        android:label="@string/navInicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/navigation_cliente"
+        android:name="com.example.mian.ui.cliente.ClienteFragment"
+        android:label="@string/navCliente"
+        tools:layout="@layout/fragment_cliente" />
+
+    <fragment
+        android:id="@+id/navigation_prestamo"
+        android:name="com.example.mian.ui.prestamo.PrestamoFragment"
+        android:label="@string/navPrestamo"
+        tools:layout="@layout/fragment_prestamo" />
+
+    <fragment
+        android:id="@+id/navigation_cobros"
+        android:name="com.example.mian.ui.cobro.CobroFragment"
+        android:label="@string/navCobro"
+        tools:layout="@layout/fragment_cobro" />
+
+    <fragment
+        android:id="@+id/navigation_registro"
+        android:name="com.example.mian.ui.registro.RegistroFragment"
+        android:label="@string/navRegistro"
+        tools:layout="@layout/fragment_registro" />
+
+</navigation>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/angWhite"
+    tools:context=".ui.prestamo.PrestamoModificarDatosFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="-1dp"
+                android:background="@drawable/ic_bg_prestamo_nuevo_off"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageButton
+                android:id="@+id/btNuevoClientePrestamo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="21dp"
+                android:background="@color/Transparent"
+                android:src="@drawable/ic_new_user"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.921"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="16dp"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        app:layout_constraintGuide_begin="207dp"
+                        app:layout_constraintGuide_percent="0.5" />
+
+
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:theme="@style/EditTextThemeOverlay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/presNewDniCliente"
+                            app:counterMaxLength="8"
+                            app:counterEnabled="true"
+                            android:textColorHint="@color/angGris"
+                            app:helperTextTextAppearance="@style/HelperTextAppearance"
+                            app:boxStrokeColor="@color/angGris"
+                            app:errorTextAppearance="@style/ErrorTextAppearance"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:errorEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtPrestamoDni"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="8"
+                                android:imeOptions="actionNext"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/roboto_condensed_bold"
+                                android:inputType="number"
+                                android:textColorHighlight="@color/black"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:theme="@style/EditTextThemeOverlay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/presNewNombreCliente"
+                            android:textColorHint="@color/angGris"
+                            app:helperTextTextAppearance="@style/HelperTextAppearance"
+                            app:boxStrokeColor="@color/angGris"
+                            app:errorTextAppearance="@style/ErrorTextAppearance"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:errorEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtPrestamoCliente"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_condensed_bold"
+                                android:inputType="textPersonName"
+                                android:focusableInTouchMode="false"
+                                android:imeOptions="actionNext"
+                                android:textColorHighlight="@color/black"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:theme="@style/EditTextThemeOverlay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/presNewImporteCredito"
+                            app:counterMaxLength="5"
+                            app:counterEnabled="true"
+                            android:textColorHint="@color/angGris"
+                            app:helperTextTextAppearance="@style/HelperTextAppearance"
+                            app:boxStrokeColor="@color/angGris"
+                            app:errorTextAppearance="@style/ErrorTextAppearance"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:errorEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtPrestamoImporteCredito"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="5"
+                                android:imeOptions="actionNext"
+                                android:fontFamily="@font/roboto_condensed_bold"
+                                android:textColorHighlight="@color/black"
+                                android:inputType="number" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <Spinner
+                            android:id="@+id/txtPrestamoModalidad"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="18dp"
+                            android:background="@drawable/ic_border_radius_txt"
+                            android:entries="@array/listModalidad"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:spinnerMode="dropdown"
+                            android:imeOptions="actionNext"
+                            android:theme="@style/SpinnerTheme" />
+
+
+                        <Spinner
+                            android:id="@+id/txtPrestamoTipoPago"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/ic_border_radius_txt"
+                            android:entries="@array/listTipoDePago"
+                            android:layout_marginBottom="18dp"
+                            android:imeOptions="actionNext"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/SpinnerTheme" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:hint="@string/presNewNumeroCuotas"
+                                app:errorEnabled="true"
+                                app:counterMaxLength="3"
+                                app:counterEnabled="true"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:theme="@style/EditTextThemeOverlay"
+                                android:textColorHint="@color/angGris"
+                                app:helperTextTextAppearance="@style/HelperTextAppearance"
+                                app:boxStrokeColor="@color/angGris"
+                                app:errorTextAppearance="@style/ErrorTextAppearance"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/txtPrestamoNumeroCuota"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_condensed_bold"
+                                    android:inputType="number"
+                                    android:imeOptions="actionNext"
+                                    android:maxLength="3"
+                                    android:textColorHighlight="@color/black"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:hint="@string/presNewTasaInteres"
+                                app:errorEnabled="true"
+                                app:counterMaxLength="3"
+                                app:counterEnabled="true"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:theme="@style/EditTextThemeOverlay"
+                                android:textColorHint="@color/angGris"
+                                app:helperTextTextAppearance="@style/HelperTextAppearance"
+                                app:boxStrokeColor="@color/angGris"
+                                app:errorTextAppearance="@style/ErrorTextAppearance"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/txtPrestamoTasaInteres"
+                                    android:layout_width="match_parent"
+                                    android:imeOptions="actionNext"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHighlight="@color/black"
+                                    android:maxLength="3"
+                                    android:fontFamily="@font/roboto_condensed_bold"
+                                    android:inputType="number" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:hint="@string/presNewImporteCuota"
+                                app:errorEnabled="true"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:theme="@style/EditTextThemeOverlay"
+                                android:textColorHint="@color/angGris"
+                                app:helperTextTextAppearance="@style/HelperTextAppearance"
+                                app:boxStrokeColor="@color/angGris"
+                                app:errorTextAppearance="@style/ErrorTextAppearance"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/txtPrestamoImporteCuota"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHighlight="@color/black"
+                                    android:fontFamily="@font/roboto_condensed_bold"
+                                    android:inputType="number"
+                                    android:focusable="false"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:hint="@string/presNewTotalPagar"
+                                app:errorEnabled="true"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:theme="@style/EditTextThemeOverlay"
+                                android:textColorHint="@color/angGris"
+                                app:helperTextTextAppearance="@style/HelperTextAppearance"
+                                app:boxStrokeColor="@color/angGris"
+                                app:errorTextAppearance="@style/ErrorTextAppearance"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/txtPrestamoTotalPagar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusableInTouchMode="false"
+                                    android:textColorHighlight="@color/black"
+                                    android:fontFamily="@font/roboto_condensed_bold"
+                                    android:inputType="number"
+                                    android:focusable="false"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:theme="@style/EditTextThemeOverlay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/presNewFecha"
+                            android:textColorHint="@color/angGris"
+                            app:helperTextTextAppearance="@style/HelperTextAppearance"
+                            app:boxStrokeColor="@color/angGris"
+                            app:errorTextAppearance="@style/ErrorTextAppearance"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:errorEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txtPrestamoFecha"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColorHighlight="@color/black"
+                                android:clickable="true"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/roboto_condensed_bold"
+                                android:inputType="date" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btRegresarPrestamo"
+                                android:layout_width="0dp"
+                                android:layout_height="60dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_condensed_bold"
+                                android:text="@string/presNewRegresar" />
+
+
+                            <Button
+                                android:id="@+id/btGuardarPrestamo"
+                                android:layout_width="0dp"
+                                android:layout_height="60dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_condensed_bold"
+                                android:text="@string/presNewGuardar" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="Modificar prestamo"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.074"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

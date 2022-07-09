@@ -1,0 +1,2 @@
+F:\DDD miansoft\miansoft\AccesoData\obj\Release\AccesoData.csprojAssemblyReference.cache
+F:\DDD miansoft\miansoft\AccesoData\obj\Release\AccesoData.csproj.CoreCompileInputs.cache
